@@ -1,10 +1,10 @@
 package dictionary.entity;
 
-import dictionary.repository.DictionaryImpl;
+import dictionary.repository.DictionaryI;
 
 import java.util.*;
 
-public class Noun implements DictionaryImpl {
+public class Noun implements DictionaryI {
 
     Map<String, Category> nouns = new TreeMap<>();
 

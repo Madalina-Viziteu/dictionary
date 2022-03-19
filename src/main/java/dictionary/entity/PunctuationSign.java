@@ -1,11 +1,11 @@
 package dictionary.entity;
 
 
-import dictionary.repository.DictionaryImpl;
+import dictionary.repository.DictionaryI;
 
 import java.util.*;
 
-public class PunctuationSign implements DictionaryImpl {
+public class PunctuationSign implements DictionaryI {
 
     Map<String, Category> punctuationSigns = new TreeMap<>();
 

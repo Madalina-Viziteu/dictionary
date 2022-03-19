@@ -1,10 +1,10 @@
 package dictionary.entity;
 
-import dictionary.repository.DictionaryImpl;
+import dictionary.repository.DictionaryI;
 
 import java.util.*;
 
-public class Adverb implements DictionaryImpl {
+public class Adverb implements DictionaryI {
 
     Map<String, Category> adverbs = new TreeMap<>();
 

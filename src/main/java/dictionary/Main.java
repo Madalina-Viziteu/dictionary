@@ -1,26 +1,18 @@
 package dictionary;
 
-import dictionary.entity.*;
+import dictionary.service.DictionaryService;
 
 public class Main {
     public static void main(String[] args) {
 
-        Noun nouns = new Noun();
-        Adjective adjective = new Adjective();
-        Verb verb = new Verb();
-        Adverb adverb = new Adverb();
-        PunctuationSign punctuationSign = new PunctuationSign();
+        DictionaryService dictionaryService = new DictionaryService();
 
-        nouns.printByCategory();
-        adjective.printByCategory();
-        verb.printByCategory();
-        adverb.printByCategory();
-        punctuationSign.printByCategory();
+        dictionaryService.myOptions();
+        dictionaryService.myMenu();
 
-        Dictionary dictionary = new Dictionary();
-        dictionary.phraseGenerator();
-
-        dictionary.sortByCategory(Category.NOUN);
+        //pentru sortarea din aplicatie, dupa categorie
+//        Dictionary dictionary = new Dictionary();
+//        dictionary.sortByCategory(Category.NOUN);
 
     }
 }
